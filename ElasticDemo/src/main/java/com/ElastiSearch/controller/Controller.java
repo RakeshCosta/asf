@@ -23,6 +23,12 @@ public class Controller {
     @Autowired
     private SongService songRepo;
 
+    @GetMapping("/fromGit")
+    public String fromGit()
+    {
+    return "helloGitHubGUI";
+    }
+    
     @PostMapping(path ="/save")
     public ResponseEntity<String> createOrUpdateDocument(@RequestParam("title") List<String> title,
     		@RequestParam("artist") List<String> artist,@RequestParam("description") List<String> description,
