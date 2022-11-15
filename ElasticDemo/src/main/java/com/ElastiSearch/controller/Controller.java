@@ -26,6 +26,7 @@ public class Controller {
     @GetMapping("/fromGit")
     public String fromGit()
     {
+        Sysout("Createing new branch");
     return "helloGitHubGUI";
     }
     
